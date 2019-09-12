@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+  <link rel="icon"  type="image/png" href="/favicon.png">
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id"
+    content="134641852092-bhqgojp2m9re1i4u38pi3o5mnr53r5f0.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+
+<body>
+  <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+  <hr>
+  <div class="user-details-container">
+    <pre>
+        <strong>Current User:</strong> <span id="current-user">Unknown</span>
+        <strong>Account Details:</strong><code class="prettyprint lang-js" id="account-details">none</code>
+        <strong>Token Details:</strong><code class="prettyprint" id="token-details">none</code>
+        <textarea id="token-id"></textarea>
+      </pre>
+  </div>
+  <script>
+    function onSignIn(googleUser) {
+      // Useful data for your client-side scripts:
+      var profile = googleUser.getBasicProfile();
+      var id_token = googleUser.getAuthResponse().id_token;
+
+      document.getElementById('current-user').textContent = profile.getId();
+      document.getElementById('account-details').textContent = JSON.stringify(googleUser.getBasicProfile());
+      document.getElementById('token-details').textContent = JSON.stringify(googleUser.getAuthResponse());
+      document.getElementById('token-id').textContent = id_token;
+    }
+
+  </script>
+</body>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>
+
+</html>

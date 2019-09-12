@@ -18,6 +18,10 @@
     "stock": {
       "type": "number",
       "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

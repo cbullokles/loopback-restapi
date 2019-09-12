@@ -1,1 +1,12 @@
-{}
+{
+  "MyDataSource": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "darconf",
+    "password": "nopassword",
+    "name": "MyDataSource",
+    "user": "root",
+    "connector": "mysql"
+  }
+}

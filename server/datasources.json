@@ -1,12 +1,12 @@
 {
   "MyDataSource": {
-    "host": "localhost",
-    "port": 3306,
-    "url": "",
-    "database": "darconf",
-    "password": "nopassword",
     "name": "MyDataSource",
-    "user": "root",
-    "connector": "mysql"
+    "connector": "mysql",
+    "host": "${DB_HOST}",
+    "port": "${DB_PORT}",
+    "url": "",
+    "database": "${DB_NAME}",
+    "password": "${DB_PASS}",
+    "user": "${DB_USER}"
   }
 }

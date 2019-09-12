@@ -7,8 +7,11 @@
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var dotenv = require('dotenv');
 
 var app = module.exports = loopback();
+
+dotenv.config();
 
 app.start = function() {
   // start the web server

@@ -16,5 +16,13 @@
   "product": {
     "dataSource": "MyDataSource",
     "public": true
+  },
+  "photo": {
+    "dataSource": "MyDataSource",
+    "public": true
+  },
+  "purchase": {
+    "dataSource": "MyDataSource",
+    "public": true
   }
 }

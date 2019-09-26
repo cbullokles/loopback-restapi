@@ -1,1 +1,12 @@
-{}
+{
+  "MyDataSource": {
+    "name": "MyDataSource",
+    "connector": "mysql",
+    "host": "${DB_HOST}",
+    "port": "${DB_PORT}",
+    "url": "",
+    "database": "darconf",
+    "password": "${DB_PASS}",
+    "user": "${DB_USER}"
+  }
+}

@@ -1,5 +1,6 @@
 {
   "initial:before": {
+    "../middleware/auth": {},
     "loopback#favicon": {}
   },
   "initial": {
@@ -13,7 +14,9 @@
     },
     "helmet#xssFilter": {},
     "helmet#frameguard": {
-      "params": { "action": "deny" }
+      "params": {
+        "action": "deny"
+      }
     },
     "helmet#hsts": {
       "params": {
@@ -38,7 +41,11 @@
       ]
     }
   },
-  "files": {},
+  "files": {
+    "loopback#static": {
+      "params": "$!../client"
+    }
+  },
   "final": {
     "loopback#urlNotFound": {}
   },

@@ -12,5 +12,56 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "product": {
+    "dataSource": "MyDataSource",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "create": true,
+          "prototype.patchAttributes": true,
+          "findById": true,
+          "replaceById": true,
+          "find": true,
+          "deleteById": true
+        }
+      }
+    }
+  },
+  "photo": {
+    "dataSource": "MyDataSource",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "create": true,
+          "prototype.patchAttributes": true,
+          "findById": true,
+          "replaceById": true,
+          "find": true,
+          "deleteById": true
+        }
+      }
+    }
+  },
+  "purchase": {
+    "dataSource": "MyDataSource",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "create": true,
+          "prototype.patchAttributes": true,
+          "findById": true,
+          "replaceById": true,
+          "find": true,
+          "deleteById": true
+        }
+      }
+    }
   }
 }
